@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<br lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Combinadores + e ~</title>
+    </head>
+    <style>
+        div, p{
+            border: 2px solid grey;
+            margin: 5px;
+        }
+        div ~ div {
+           border-style: dashed; 
+        }
+        div + div{
+            border-color: red;
+        }
+    </style>
+
+    <body>
+
+        <h2>Outros descendentes</h2>
+
+        <div>Filho 1: div</div>
+        <p>Filho 2: p</p>
+        <div>Filho 3: div</div>
+        <div>Filho 4: div
+            <div>Filho 4.1: div</div>
+        </div>
+
+    </body>
+
+    <h2>Pseudoclasse</h2>
+    :disabled - Elemento de interface que esteja desabilitado.</br>
+    :hover    - Elemento cujo mouse está sobre.</br>
+    :focus    - Elemento que possui foco do cursor do teclado.</br>
+    :first-child - Elemento que é o primeiro filho de seu pai.</br>
+    :last-child - Elemento que é o último filho de seu pai.</br>
+    :empty - Elemento que não possui filho.</br>
+    : not(E) - Elemento não conrresponde ao seletor <b>E</b>.</br>
+</html>
