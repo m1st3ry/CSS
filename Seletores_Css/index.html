@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo CSS</title>
     <style>
-        tipo1 {
-            color: red;
-        }
+     ul {
+        color: rgb(218, 57, 17);
+     }
     </style>
 </head>
 <body>
@@ -16,30 +16,38 @@
     <h1>Adicionando Css ao documento</h1>
     <p>Temos 3 formas de adicionar um estilo ao documento</p>
     <div>
-        <ol>
-            <ul>Css Interno</ul>
+        <div>
+            <ol>
+                <div>
+                    <ul>Css Interno</ul>
+                
+                    </p>Utilizado por meio de uma tag
+                    <!-- Utilizar "&lt;" no lugar de "<" e "&gt;" no lugar de ">", afim de mostrar código na página-->
+                    <b>&lt;style&gt;
+                            div {
+                                color: red;
+                            }
+                            &lt;/style&gt;</b>
 
-            </p>Utilizado por meio de uma tag
-            <!-- Utilizar "&lt;" no lugar de "<" e "&gt;" no lugar de ">", afim de mostrar código na página-->
-            &lt;style&gt;
-                    div {
-                        color: red;
-                    }
-                    &lt;/style&gt;
+                        </br></br>
+                                    
+                    <ul>CSS em um seletor</ul>
+                
+                        <p><b>&lt;div style="color: blue"&gt;&lt;div&gt;</b></p>
 
-                </br></br>            
-            <ul>Ou dentro de um seletor</ul> 
+                        </br></br>
+                        
+                    <ul>Css Externo</ul>
+                
+                        <p>Utilizado por meio de um link para uma folha de estilo externa </br> com um:
 
-                </br></br>
-            <ul>Css Externo</ul>
+                            <b>>&lt;link rel="stylesheet" href="style.css"&gt;</b>
 
-                <p>Utilizado por meio de um link para uma folha de estilo externa </br> com um:
-
-                    &lt;link rel="stylesheet" href="style.css"&gt;
-
-                    colocado dentro da tag head. 
-                </p>
-            
-        </ol>
+                            colocado dentro da tag head. 
+                        </p>
+                </div>
+            </ol>
+        </div>
+    </div>
 </body>
 </html>
