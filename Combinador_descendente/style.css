@@ -4,3 +4,7 @@ body {
     border-top: 30px;
     border-left: 20px;
 }
+
+.container {
+    grid-column: center;
+}
