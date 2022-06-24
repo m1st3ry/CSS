@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo CSS</title>
-    <style>
-     ul {
-        color: rgb(218, 57, 17);
-     }
-    </style>
-</head>
-<body>
 
-    <h1>Adicionando Css ao documento</h1>
+    <head>
 
-    <h3>Temos 3 formas de adicionar um estilo ao documento</h3>
-    <div>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendendo CSS</title>
+        <style>
+        ul {
+            color: rgb(218, 57, 17);
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Adicionando Css ao documento</h1>
+
+        <h3>Temos 3 formas de adicionar um estilo ao documento</h3>
+
         <div>
-            <ol>
-                <div>
-                    <ul>Css Interno</ul>
-                
-                    <p style="color: red;">Utilizado por meio de uma tag</p>
-                    <!-- Utilizar "&lt;" no lugar de "<" e "&gt;" no lugar de ">", afim de mostrar código na página-->
-                    &lt;style&gt;
-                            div {
-                                color: red;
-                            }
-                            &lt;/style&gt;
+            <div>
+                <ol>
+                    <div>
+                        <ul>Css Interno</ul>
+                    
+                        <p style="color: red;">Utilizado por meio de uma tag</p>
+                        <!-- Utilizar "&lt;" no lugar de "<" e "&gt;" no lugar de ">", afim de mostrar código na página-->
+                        &lt;style&gt;
+                                div {
+                                    color: red;
+                                }
+                                &lt;/style&gt;
 
-                        </br></br>
-                                    
-                    <ul>CSS em um seletor</ul>
-                
-                        <p style="color: blue;">&lt;div style="color: blue"&gt;&lt;div&gt;</p>
+                            </br></br>
+                                        
+                        <ul>CSS em um seletor</ul>
+                    
+                            <p style="color: blue;">&lt;div style="color: blue"&gt;&lt;div&gt;</p>
 
-                        </br></br>
-                        
-                    <ul>Css Externo</ul>
-                
-                        <p>Utilizado por meio de um link para uma folha de estilo externa </br> com um:
+                            </br></br>
+                            
+                        <ul>Css Externo</ul>
+                    
+                            <p>Utilizado por meio de um link para uma folha de estilo externa </br> com um:
 
-                            <b>>&lt;link rel="stylesheet" href="style.css"&gt;</b>
+                                <b>>&lt;link rel="stylesheet" href="style.css"&gt;</b>
 
-                            colocado dentro da tag head. 
-                        </p>
-                </div>
-            </ol>
+                                colocado dentro da tag head. 
+                            </p>
+                    </div>
+                </ol>
+            </div>
         </div>
-    </div>
-    <br>Para uma melhor flexibilidade e facilidade de manutenção,</br> é indicado o uso da folha de estilo, por link para um documento externo.</p>
-</body>
+
+        <br>Para uma melhor flexibilidade e facilidade de manutenção,</br> é indicado o uso da folha de estilo, por link para um documento externo.</p>
+        
+        </br></br>
+
+        <h3>Seletor por classe</h3>
+
+        <br>Utiliza-se o "." para chamar um seletor de classe, </br>
+        para gerar o estilo daquela classe que ela está atribuída.</p>
+        &lt;div class="exemplo"&gt;Parágrafo&gt;</br>
+        &lt;div class="exemplo"&gt;Div&lt;div&gt;
+        </br></br>
+        .exemplo {</br>
+            color: blue;</br>
+        }</br>
+
 </html>
