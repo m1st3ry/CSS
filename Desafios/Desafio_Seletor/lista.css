@@ -5,8 +5,11 @@ html {
 
 ul.listaBonita > li {
     list-style: none;
-    border: 2px solid #a0a0a0;
+    border-width: 2px 
     padding: 4px 8px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #a0a0a0
 }
 
 ul.listaBonita {
@@ -14,11 +17,13 @@ ul.listaBonita {
 }
 
 ul.listaBonita > li:first-child {
+    border-top-style: solid;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
 ul.listaBonita > li:last-child {
+    border-bottom-style: solid;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -30,5 +35,14 @@ ul.listaBonita > li:hover {
 ul.listaBonita > li.selecionado {
     background-color: #bfdbff;
     border-color: #2e79db;
+    border-bottom-style: solid;
+}
+
+ul.listaBonita > li:not(.selecionado) + li.selecionado {
+    border-top-style: solid;
+}
+
+ul.listaBonita > li:not(.selecionado) + li:not(.selecionado) {
+    border-top-style: solid;
 }
 
