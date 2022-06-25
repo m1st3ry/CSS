@@ -1,3 +1,14 @@
-div {
+html {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+ul.listaBonita > li {
+    list-style: none;
+    border: 2px solid #a0a0a0;
+    padding: 4px 8px;
+}
+
+ul.listaBonita {
     color: #353535;
 }
