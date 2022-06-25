@@ -27,3 +27,7 @@ ul.listaBonita > li.selecionado {
     background-color: #bfdbff;
     border-color: #2e79db;
 }
+
+ul.listaBonita > li:hover {
+    background-color: #ebebeb;
+}
