@@ -22,6 +22,9 @@ img {
     display: block;
 }
 
+body {
+    margin-bottom: 100px;
+}
 .header {
     background: #1d1e20;
     display: flex;
@@ -63,7 +66,8 @@ img {
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Cada 1fr é o 100% por 3*/
-    max-width: 780px;
+    max-width: 800px;
+    padding: 10px;
     margin: 0 auto;
     gap: 20px;
 }
@@ -74,4 +78,26 @@ img {
     grid-gap: 10px;
     align-items: center;
 }
+
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5; /*Queremos que o anúncio fique entre a linha 2 e 5*/
+    border-top: 10px solid tomato;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+/*CSS GRID2*/
 
