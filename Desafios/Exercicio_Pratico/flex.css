@@ -57,3 +57,9 @@ img {
     margin: 10px;
 }
 
+/* CSS GRID1*/
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cada 1fr é o 100% por 3*/
+}
