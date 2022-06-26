@@ -25,6 +25,11 @@ img {
 body {
     margin-bottom: 100px;
 }
+
+footer {
+    background-color: rgb(243, 230, 230);
+    text-decoration: white;
+}
 .header {
     background: #1d1e20;
     display: flex;
@@ -160,4 +165,13 @@ body {
     grid-column: 1;
     grid-row: 2;
     align-self: end;
+}
+
+.footer {
+    background: #1d1e20;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
