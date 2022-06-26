@@ -62,7 +62,7 @@ img {
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Cada 1fr é o 100% por 3*/
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
