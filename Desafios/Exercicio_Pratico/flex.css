@@ -8,12 +8,13 @@ body, ul, li, p {
 
 a {
     text-decoration: none;
-    color: white
+    color: white;
 }
 
 h1 {
     text-decoration: none;
-    color: white;
+    color: black;
+    text-align: center;
 }
 
 img {
@@ -64,5 +65,13 @@ img {
     grid-template-columns: repeat(3, 1fr); /* Cada 1fr é o 100% por 3*/
     max-width: 780px;
     margin: 0 auto;
+    gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
 }
 
