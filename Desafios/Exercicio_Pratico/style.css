@@ -12,8 +12,12 @@ a {
     color: white;
 }
 
+a:hover {
+    background: rgba(243, 227, 227, 0.05);
+}
+
 .header {
-    background: black;
+    background: rgb(38, 74, 196);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,4 +26,19 @@ a {
 
 .menu {
     display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
