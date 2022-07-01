@@ -46,3 +46,9 @@ a:hover {
 .btn-mobile {
     display: none;
 }
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+}
