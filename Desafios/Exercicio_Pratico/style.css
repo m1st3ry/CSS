@@ -51,4 +51,7 @@ a:hover {
     #btn-mobile {
         display: block;
     }
+    #menu {
+        display: none;
+    }
 }
