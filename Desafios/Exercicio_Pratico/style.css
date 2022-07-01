@@ -42,3 +42,7 @@ a:hover {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.btn-mobile {
+    display: none;
+}
